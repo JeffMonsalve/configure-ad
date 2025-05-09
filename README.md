@@ -55,10 +55,14 @@ We begin by creating two virtual machines (VMs): one named DC-1, running Windows
 <p>
 Next, we’ll update the DNS settings for Client-1 in the Azure portal, setting its DNS server to the static private IP address of DC-1 and then restart Client-1 VM.
 </p>
-<img src="https://i.imgur.com/cGjvRke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+![Verifying DNS Configuration on Client-1](https://github.com/user-attachments/assets/7ee62128-63f5-473f-9f01-c7cbcd86ad9b)
+
+
 <br />
 </p>
-Excellent! We can start creating Organizational Units (OU). Let's first create an OU named _EMPLOYEES. Create another OU named _ADMINS. In order to do that right click on the domain area. Select new->Organizational Unit and fill out the field. Then click inside of your OU and right click, select new and select user and fill out the information for your new user. The user should be named Jane Doe, she is going to be an Admin so her username will be Jane_admin. Lastly add Jane to the domain admins security group. 
+After both VMs have successfully restarted, we connect to the Client-1 VM via RDP. From there, we use PowerShell to ping DC-1’s IP address. Because the firewall on DC-1 has been disabled, the ping should succeed, confirming network connectivity. Next, we run the ipconfig /all command on Client-1 to verify that DC-1’s static IP address is correctly set as the DNS server.
 </p>
 <img src="https://i.imgur.com/hL7g5Y5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
