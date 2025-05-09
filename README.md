@@ -47,9 +47,13 @@ We begin by creating two virtual machines (VMs): one named DC-1, running Windows
 <p>
 
 </p>
-<img src="https://i.imgur.com/1lrrGPw.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+
+![DNS Settings Configuration Screenshot](https://github.com/user-attachments/assets/f23149e4-c8e7-4ea3-8efd-123608fc880e)
+
+
 <p>
-Next, we’ll update the DNS settings for Client-1 in the Azure portal, setting its DNS server to the static private IP address of DC-1.
+Next, we’ll update the DNS settings for Client-1 in the Azure portal, setting its DNS server to the static private IP address of DC-1 and then restart Client-1 VM.
 </p>
 <img src="https://i.imgur.com/cGjvRke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
