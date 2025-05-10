@@ -29,7 +29,7 @@ In this lab we will create two VMs in the same VNET. One will be a Domain Contro
 </p>
 <br />
 
-<p>## Screenshot Example
+
 
 
 ![image](https://github.com/user-attachments/assets/533cba35-1d81-43d7-ab4a-4518652f6893)
@@ -48,6 +48,29 @@ We begin by creating two virtual machines (VMs): one named DC-1, running Windows
 
 </p>
 
+![image](https://github.com/user-attachments/assets/bbdd7a30-2746-4192-af7b-5407c075fcef)
+![image](https://github.com/user-attachments/assets/098bc3ea-5fc0-42b0-ac27-5fdf508526f9)
+
+
+
+
+
+</p>
+<p>
+Next, we connect to the domain controller (DC-1) using Remote Desktop (RDP). Once logged in, we disable the firewall for the domain, private, and public network profiles. This ensures that Client-1 can successfully ping DC-1’s private IP address later in the tutorial without any issues.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![DNS Settings Configuration Screenshot](https://github.com/user-attachments/assets/f23149e4-c8e7-4ea3-8efd-123608fc880e)
 
@@ -62,7 +85,7 @@ Next, we’ll update the DNS settings for Client-1 in the Azure portal, setting 
 
 <br />
 </p>
-After both VMs have successfully restarted, we connect to the Client-1 VM via RDP. From there, we use PowerShell to ping DC-1’s IP address. Because the firewall on DC-1 has been disabled, the ping should succeed, confirming network connectivity. Next, we run the ipconfig /all command on Client-1 to verify that DC-1’s static IP address is correctly set as the DNS server.
+Once both VMs have restarted, we access the Client-1 VM using Remote Desktop (RDP). In PowerShell, we ping DC-1’s private IP address to confirm that the two machines can communicate over the network. We then run the ipconfig /all command on Client-1 to verify that DC-1’s static IP address is correctly set as the DNS server
 </p>
 <img src="https://i.imgur.com/hL7g5Y5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
