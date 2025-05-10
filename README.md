@@ -126,19 +126,28 @@ Once the DC-1 VM has restarted, we log back in as “mydomain.com\labuser”. Th
 <br />
 <p>
   <p>
-<img src="https://i.imgur.com/Ze0Em5e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Organizational Units Successfully Created](https://github.com/user-attachments/assets/ee5778a2-38ef-4532-87dd-5a6ff672d920)
+![image](https://github.com/user-attachments/assets/e4d8e285-d994-434d-9b57-e589e1f49577)
+
+
+
 </p>
 <p>
-Wonderufl Client-1 is now a part of the domain. Now we will set up remote desktop for non-administrative users on Client-1. We have to log into Client-1 as an admin and open system properties. Click on "Remote Desktop", allow "domain users" access to remote desktop. After completing those steps you should be able to log into Client-1 as a normal user.
+In the _ADMINS organizational unit (OU), we create a new user named Jane Doe with the username “jane_admin”. After creating the account, we right-click the user, select Properties, and add her to the Domain Admins security group.
 </p>
 <br />
 
 <p>
   <p>
-<img src="https://i.imgur.com/SApOKiE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+![Adding a User to the Domain Admins Group](https://github.com/user-attachments/assets/5028f04a-9ade-4be2-8e8d-bfdb10dc3494)
+
+
 </p>
 <p>
-Lastly to verify that noraml users can RDP into Client-1 we will use a script to generate thousands of users into the domain. We will input the script in powershell, after the users are created we will select one and RDP into Client-1.
+Now, we log in to the Client-1 VM and join it to the domain. To do this, we go to the System settings, click on Rename this PC (Advanced), then select Change. Choose Domain and type mydomain.com. 
 </p>
 <br />
 <img src="https://i.imgur.com/EzWG8ug.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
