@@ -87,13 +87,29 @@ Next, we’ll update the DNS settings for Client-1 in the Azure portal, setting 
 </p>
 Once both VMs have restarted, we access the Client-1 VM using Remote Desktop (RDP). In PowerShell, we ping DC-1’s private IP address to confirm that the two machines can communicate over the network. We then run the ipconfig /all command on Client-1 to verify that DC-1’s static IP address is correctly set as the DNS server
 </p>
-<img src="https://i.imgur.com/hL7g5Y5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/user-attachments/assets/ea77dad9-4ce5-4e12-9439-2ecd125fa443)
+
+
+
 <br />
 </p>
-<img src="https://i.imgur.com/kcgvzdE.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-From now on you can use Jane_admin as the administrator account. Now we will join Client-1 to the domain (mydomain.com) from the azure portal we will change client-1's DNS settings to the DC's Private IP address. After you do that restart Client-1 from within the Azure portal. Our picture below shows verification that client-1 is on the DC-1 DNS. 
+
+Next, on the domain controller (DC-1), we use Server Manager to install the Active Directory Domain Services.
 </p>
-<img src="https://i.imgur.com/jbrGTXW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+![Promoting the Server to a Domain Controller](https://github.com/user-attachments/assets/4889a11b-135c-45c2-a4e0-0ef8e2d3278f)
+![image](https://github.com/user-attachments/assets/606a45a8-d777-492b-86be-cf3fc270a806)
+
+
+
+
+
+</p>
+<p>
+We then promote DC-1 to a Domain Controller and set up a new forest with the domain name called “mydomain.com”.
+
 <br />
 </p>
 <img src="https://i.imgur.com/kvcm2cY.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
