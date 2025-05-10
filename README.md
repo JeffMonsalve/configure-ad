@@ -112,12 +112,16 @@ We then promote DC-1 to a Domain Controller and set up a new forest with the dom
 
 <br />
 </p>
-<img src="https://i.imgur.com/kvcm2cY.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Creating Organizational Units in Active Directory](https://github.com/user-attachments/assets/f30a350f-94de-41a0-90a6-0a45e3001054)
+![image](https://github.com/user-attachments/assets/d65cc7d5-8c9d-482f-8d5a-187f73e6e28a)
+
+
 </p>
 <p>
 </p>
 <p>
-We have to join Client-1 to the domain in order to do so navigate to your system settings and go to about. Off to the right select rename this pc (advanced). From there select to change the domain. Enter "mydomain.com" after that enter your credentials from mydomain.com\labuser. Your computer will restart and then client-1 will be a part of mydomain.com
+Once the DC-1 VM has restarted, we log back in as “mydomain.com\labuser”. Then, we open Active Directory Users and Computers and create two organizational units (OUs) named _EMPLOYEES and _ADMINS.
 </p>
 <br />
 <p>
