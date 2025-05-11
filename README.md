@@ -180,7 +180,12 @@ Log in to DC-1 as the jane_admin user. Using PowerShell, we’ll run a script th
 
 
 </p>
-<img src="https://i.imgur.com/n3gMwQV.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+
+
+
+![Configuring Account Lockout Policy in Group Policy](https://github.com/user-attachments/assets/d30efd89-4e1a-464a-b393-4029c333eb11)
+
+
 <p>
-As you can see the Powershell script created a user with the username "bab.hubo" We were able to login to Client-1 with his credentials as a normal user. 
-</p>
+Next, we’ll configure account lockout settings for the newly created users. Log in to DC-1 and open Group Policy Management. Expand the mydomain.com domain, right-click on the Default Domain Policy, and select Edit. In the Group Policy Editor, navigate to: Configuration>Policies>Windows Settings>Security Settings>Account Policies>Account Lockout Policy. And set the policy to lock a user account after 5 failed login attempts.
