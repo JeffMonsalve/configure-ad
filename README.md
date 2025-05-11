@@ -166,8 +166,19 @@ Client-1 is now successfully joined to the domain. Next, we’ll configure Remot
 
 <p>
 <p>
-  <p>
-<img src="https://i.imgur.com/Gkpe68K.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+![Screenshot (1630)](https://github.com/user-attachments/assets/4a0d9bcd-b957-4d61-842c-d43213ebcee2)
+![PowerShell Script to Bulk Create AD Users](https://github.com/user-attachments/assets/2eb65b96-2d1a-48f6-bcf6-c289257e1692)
+
+
+
+
+
+</p>
+<p>
+Log in to DC-1 as the jane_admin user. Using PowerShell, we’ll run a script that automatically generates thousands of test user accounts in Active Directory. Once the users are created, we’ll  open Active Directory Users and Computers, select one of the new users, and then log into Client-1 using that account to verify domain access.
+
+
 </p>
 <img src="https://i.imgur.com/n3gMwQV.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <p>
