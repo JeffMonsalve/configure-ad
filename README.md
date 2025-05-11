@@ -150,7 +150,20 @@ In the _ADMINS organizational unit (OU), we create a new user named Jane Doe wit
 Now, we log in to the Client-1 VM and join it to the domain. To do this, we go to the System settings, click on Rename this PC (Advanced), then select Change. Choose Domain and type mydomain.com. 
 </p>
 <br />
-<img src="https://i.imgur.com/EzWG8ug.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+![Joining Client-1 to the Domain](https://github.com/user-attachments/assets/47ec530e-4b4f-4a3c-a1f2-1a309a1146b2)
+![image](https://github.com/user-attachments/assets/6b1f2049-97cd-48b3-a6c5-c2b0feef9ee0)
+
+
+
+
+
+</p>
+<p>
+Client-1 is now successfully joined to the domain. Next, we’ll configure Remote Desktop access for non-administrative users. To do this, log into Client-1 with an administrator account and open the System Properties. Under the Remote Desktop tab, enable Remote Desktop and add the Domain Users group to the list of allowed remote users. Once this is set, standard domain users should be able to connect to Client-1 via Remote Desktop.
+
+
 <p>
 <p>
   <p>
