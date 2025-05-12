@@ -23,21 +23,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-</p>
-<p>
-
-</p>
-<br />
-
-
-
 
 ![image](https://github.com/user-attachments/assets/533cba35-1d81-43d7-ab4a-4518652f6893)
-
-
-
-
-
 </p>
 <p>
 We begin by creating two virtual machines (VMs): one named DC-1, running Windows Server 2022, and another named Client-1, running Windows 10. Both VMs are connected to the same virtual network (VNet). After setting up the VMs, we configure the domain controller (DC-1) with a static IP address instead of a dynamic one. This ensures that it can reliably provide Active Directory and DNS services to the client machine (Client-1).
