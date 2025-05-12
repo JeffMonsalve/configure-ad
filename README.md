@@ -189,3 +189,25 @@ Log in to DC-1 as the jane_admin user. Using PowerShell, we’ll run a script th
 
 <p>
 Next, we’ll configure account lockout settings for the newly created users. Log in to DC-1 and open Group Policy Management. Expand the mydomain.com domain, right-click on the Default Domain Policy, and select Edit. In the Group Policy Editor, navigate to: Configuration>Policies>Windows Settings>Security Settings>Account Policies>Account Lockout Policy. And set the policy to lock a user account after 5 failed login attempts.
+</p>
+
+
+![image](https://github.com/user-attachments/assets/1687aa8b-3178-4a04-8718-56086a6697f7)
+
+
+
+
+
+</p>
+<p>
+When attempting to log in to Client-1 using one of the newly created accounts, the account becomes locked after five failed login attempts. To unlock the account, we log in to DC-1, open Active Directory Users and Computers, right-click on mydomain.com, select Find, enter the username of the locked account, and click on it to view its properties.
+
+![image](https://github.com/user-attachments/assets/4e404aa3-7d1a-4312-bf68-af3a72698e4e)
+
+
+
+
+
+</p>
+<p>
+Lastly, if you need to reset a password or disable an account, simply right-click the user account in Active Directory Users and Computers.
