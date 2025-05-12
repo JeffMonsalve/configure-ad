@@ -33,38 +33,21 @@ We begin by creating two virtual machines (VMs): one named DC-1, running Windows
 
 <p>
 
-</p>
-
 ![image](https://github.com/user-attachments/assets/bbdd7a30-2746-4192-af7b-5407c075fcef)
 ![image](https://github.com/user-attachments/assets/098bc3ea-5fc0-42b0-ac27-5fdf508526f9)
-
-
-
-
-
 </p>
 <p>
 Next, we connect to the domain controller (DC-1) using Remote Desktop (RDP). Once logged in, we disable the firewall for the domain, private, and public network profiles. This ensures that Client-1 can successfully ping DC-1’s private IP address later in the tutorial without any issues.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![DNS Settings Configuration Screenshot](https://github.com/user-attachments/assets/f23149e4-c8e7-4ea3-8efd-123608fc880e)
-
+</p>
+<br />
 
 <p>
-Next, we’ll update the DNS settings for Client-1 in the Azure portal, setting its DNS server to the static private IP address of DC-1 and then restart Client-1 VM.
+
+![DNS Settings Configuration Screenshot](https://github.com/user-attachments/assets/f23149e4-c8e7-4ea3-8efd-123608fc880e)
 </p>
+<p>
+Next, we’ll update the DNS settings for Client-1 in the Azure portal, setting its DNS server to the static private IP address of DC-1 and then restart Client-1 VM.
+
 
 
 ![Verifying DNS Configuration on Client-1](https://github.com/user-attachments/assets/7ee62128-63f5-473f-9f01-c7cbcd86ad9b)
